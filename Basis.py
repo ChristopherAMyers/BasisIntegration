@@ -1,4 +1,9 @@
 
+import numpy as np
+from math import sqrt, log, pi
+import time
+import integration
+
 class BasisFunc:
     def __init__(self):
         self.coeff = np.array([])
