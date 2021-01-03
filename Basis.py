@@ -1,6 +1,6 @@
 
 import numpy as np
-from math import sqrt, log, pi
+from math import sqrt, log, pi, exp
 import time
 import integration
 
@@ -74,7 +74,7 @@ class Basis:
         p = a+b 
         mu = a*b/p
         xAB = A - B
-        expFactor = math.exp(-mu*xAB*xAB)
+        expFactor = exp(-mu*xAB*xAB)
         if pow1 == 0 and pow2 == 0:
             return self.__s_s_overlap__(a, b)*expFactor
         if pow1 == 0 and pow2 == 1:
